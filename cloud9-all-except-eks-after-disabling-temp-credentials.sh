@@ -62,3 +62,5 @@ fi
 
 eksctl utils write-kubeconfig --name eksworkshop-eksctl
 eksctl create iamidentitymapping --cluster eksworkshop-eksctl --arn ${rolearn} --group system:masters --username admin
+cd ~/environment
+rm -rf ./cloud9-eksworkshop-init-scripts
